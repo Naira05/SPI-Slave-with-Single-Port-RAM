@@ -1,19 +1,15 @@
 module Wrapper_tb();
 
-parameter MEM_DEPTH = 256;
-parameter ADDER_SIZE= 8;
-parameter IDLE= 3'b000;
-parameter CHK_CMD= 3'b001;
-parameter WRITE= 3'b010;
-parameter READ_ADD= 3'b011;
-parameter READ_DATA= 3'b100;
+parameter MEM_DEPTH = 256, ADDR_SIZE = 8;
+parameter IDLE = 3'b000, CHK_CMD = 3'b001, WRITE = 3'b010, 
+READ_ADD = 3'b011, READ_DATA= 3'b100;
 
 reg clk, rst_n, SS_n, MOSI;
 wire MISO;
 reg [9:0] bus;
 
-wrapper #(MEM_DEPTH, ADDER_SIZE, IDLE, CHK_CMD, WRITE, READ_ADD, READ_DATA)
-DUT(clk, rst_n, SS_n, MOSI, MISO);
+SPI_Wrapper #(.MEM_DEPTH(MEM_DEPTH), .ADDR_SIZE(ADDR_SIZE), .IDLE(IDLE), .CHK_CMD(CHK_CMD), .WRITE(WRITE), .READ_ADD(READ_ADD), .READ_DATA(READ_DATA))
+DUT(MOSI,SS_n, clk,rst_n,MISO);
 
 initial begin
 	clk=0;
@@ -23,7 +19,7 @@ end
 integer i;
 
 initial begin
-	$readmemb("mem.dat", DUT.inst1.ram);
+	$readmemb("mem.dat", DUT.ram_inst.mem);
 
 //rst	
 	rst_n = 0;

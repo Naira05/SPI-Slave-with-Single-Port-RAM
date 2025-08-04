@@ -1,6 +1,10 @@
 m255
 K4
 z2
+Z0 !s99 nomlopt
+R0
+R0
+R0
 !s11f vlog 2021.1 2021.01, Jan 19 2021
 13
 !s112 1.1
@@ -9,72 +13,105 @@ z2
 !i10f 100
 cModel Technology
 dE:/digital_design_course/DSP_Project/Eslam
+T_opt
+Z1 !s110 1754347653
+VQiDbkJR^c?h`UzibcAafG0
+04 10 4 work Wrapper_tb fast 0
+=1-04bf1b248b7b-68913885-287-5718
+!s124 OEM100
+o-quiet -auto_acc_if_foreign -work work +acc
+Z2 tCvgOpt 0
+n@_opt
+OL;O;2021.1;73
 vRAM
-Z0 !s110 1754344715
+R1
 !i10b 1
 !s100 PUd:a[EUMSV`FbER21>?=1
-I=DXokh:4ROaX1fcYHe15U2
-Z1 dE:/digital_design_course/Project2/SPI-Slave-with-Single-Port-RAM
+Ik[MIZICDh1NC4FNb74m9e1
+Z3 dE:/digital_design_course/Project2/SPI-Slave-with-Single-Port-RAM
 w1754014721
-8E:/digital_design_course/Project2/SPI-Slave-with-Single-Port-RAM/RAM.V
-FE:/digital_design_course/Project2/SPI-Slave-with-Single-Port-RAM/RAM.V
-!i122 4
+8RAM.V
+FRAM.V
+!i122 30
 L0 6 35
-Z2 VDg1SIo80bB@j0V0VzS_@n1
-Z3 OL;L;2021.1;73
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 OL;L;2021.1;73
 r1
 !s85 0
 31
-Z4 !s108 1754344715.000000
-!s107 E:/digital_design_course/Project2/SPI-Slave-with-Single-Port-RAM/RAM.V|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/digital_design_course/Project2/SPI-Slave-with-Single-Port-RAM/RAM.V|
+Z6 !s108 1754347653.000000
+Z7 !s107 Wrapper_tb.v|SPI_Wrapper.v|SPI_Slave.v|RAM.V|
+Z8 !s90 -reportprogress|300|RAM.V|SPI_Slave.v|SPI_Wrapper.v|Wrapper_tb.v|
 !i113 0
-Z5 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-Z6 tCvgOpt 0
+Z9 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
 n@r@a@m
 vSPI_Slave
-R0
-!i10b 1
-!s100 7d5ajFjQdTc`b5U=2D5^H0
-IF?eRlTFeEa0fCPJLG^PS21
 R1
-w1754344321
-8E:/digital_design_course/Project2/SPI-Slave-with-Single-Port-RAM/SPI_Slave.V
-FE:/digital_design_course/Project2/SPI-Slave-with-Single-Port-RAM/SPI_Slave.V
-!i122 3
-L0 6 122
-R2
+!i10b 1
+!s100 4FBO6_7SaKHlF^N99LOlF1
+IFCn?ZB=MAFcRn@SRHkOAC0
 R3
+w1754347634
+8SPI_Slave.v
+FSPI_Slave.v
+!i122 30
+L0 6 120
+R4
+R5
 r1
 !s85 0
 31
-R4
-!s107 E:/digital_design_course/Project2/SPI-Slave-with-Single-Port-RAM/SPI_Slave.V|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/digital_design_course/Project2/SPI-Slave-with-Single-Port-RAM/SPI_Slave.V|
-!i113 0
-R5
 R6
+R7
+R8
+!i113 0
+R9
+R2
 n@s@p@i_@slave
 vSPI_Wrapper
-R0
-!i10b 1
-!s100 DIldHNE[SDf[lgdmGHT[50
-IfCaKOA3TaMKR^;oWOjgLl2
 R1
-w1754344702
-8E:/digital_design_course/Project2/SPI-Slave-with-Single-Port-RAM/SPI_Wrapper.V
-FE:/digital_design_course/Project2/SPI-Slave-with-Single-Port-RAM/SPI_Wrapper.V
-!i122 5
-L0 1 33
-R2
+!i10b 1
+!s100 fWocOHYNiQWa0WmQJ2FPb1
+IgFhi346_@m1l?z<QB@T1I2
 R3
+w1754346161
+8SPI_Wrapper.v
+FSPI_Wrapper.v
+!i122 30
+L0 1 35
+R4
+R5
 r1
 !s85 0
 31
-R4
-!s107 E:/digital_design_course/Project2/SPI-Slave-with-Single-Port-RAM/SPI_Wrapper.V|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/digital_design_course/Project2/SPI-Slave-with-Single-Port-RAM/SPI_Wrapper.V|
-!i113 0
-R5
 R6
+R7
+R8
+!i113 0
+R9
+R2
 n@s@p@i_@wrapper
+vWrapper_tb
+R1
+!i10b 1
+!s100 W3l1WW50f1z9W=XicSaI`1
+I__K?[mf8d_=Bl[8fV3HNL3
+R3
+w1754346240
+8Wrapper_tb.v
+FWrapper_tb.v
+!i122 30
+L0 1 108
+R4
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R2
+n@wrapper_tb

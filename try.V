@@ -39,14 +39,14 @@ module SPI_Slave
                     ns = WRITE;
                 else if (SS_n == 0 && MOSI == 1 ) begin 
                     if (ADD_READ)
-                    ns = READ_DATA;
+                    ns = READ_ADD;
                     else 
                     ns = READ_ADD;
                 end else 
                     ns = IDLE;
             end
             WRITE : begin
-                if (SS_n == 0) //not sure
+                if (SS_n == 0 && rx_data[9]) //not sure
                     ns = WRITE;
                 else 
                     ns = IDLE;
@@ -97,24 +97,26 @@ module SPI_Slave
                     if(!tx_valid) begin
                     rx_temp <={MOSI , rx_temp[9:1]};
                     counter1 <= counter1 + 1;
-                        if (counter1 == 4'd9) begin 
+                    end
+                    else if (counter1 == 4'd9) begin 
                         rx_data <= rx_temp;
                         rx_valid <= 1'b1;
                         counter1 <= 4'd0;
                         MISO <= 1'b0;
                         ADD_READ <= 1'b0;
-                    end end else begin  //tx_valid == 1
+                    end else begin  //tx_valid == 1
                         if (counter2 == 0) begin
                         MISO_temp <= tx_data[7:0];
                         end
-                        MISO <= MISO_temp[7];
-                        MISO_temp <= MISO_temp << 1;
+                        MISO <= MISO_temp[7 - counter2];
                         counter2 <= counter2 + 1;
                         if (counter2 == 7) begin 
                             counter2 <= 0;
                         end 
                     end
                 end 
+            
+    
             default : begin 
                 MISO <= 1'b0;
             end
