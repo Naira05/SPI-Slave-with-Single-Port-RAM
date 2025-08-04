@@ -1,4 +1,4 @@
-//module Name : RAM.V
+//module Name : RAM
 //module Version : 1
 //Date : 2025 - 7 - 31 
 //Author : 
