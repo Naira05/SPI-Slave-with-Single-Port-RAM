@@ -12,7 +12,7 @@ module RAM
     );
     
     reg [7:0] addr_wr;
-    reg [7:0] addr_rd; 
+   
     reg [ADDR_SIZE - 1:0] mem [MEM_DEPTH - 1:0];
     
     always@(posedge clk)
@@ -28,12 +28,16 @@ module RAM
             case(din[9:8])
                 2'b00: addr_wr <= din[7:0];
                 2'b01: mem[addr_wr] <= din[7:0];
-                2'b10: addr_rd <= din[7:0];
+                2'b10: addr_wr <= din[7:0];
                 2'b11: 
                 begin
-                    dout <= mem[addr_rd];
+                    dout <= mem[addr_wr];
                     tx_valid <= 1'b1;
                 end 
+                 default: begin
+                        dout <= 0;
+                        tx_valid <= 0;
+                    end
             endcase
         end
     end

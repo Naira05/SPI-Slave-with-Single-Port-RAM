@@ -1,0 +1,115 @@
+m255
+K4
+z2
+!s99 nomlopt
+!s11f vlog 2021.1 2021.01, Jan 19 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/digital_design_course/Project2/SPI-Slave-with-Single-Port-RAM
+T_opt
+!s110 1754409545
+V52>KQFCZEK=QW@LDS5lGG0
+04 10 4 work Wrapper_tb fast 0
+=1-04bf1b248b7b-68922a48-3e0-42ac
+!s124 OEM100
+o-quiet -auto_acc_if_foreign -work work +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2021.1;73
+R0
+vRAM
+Z2 !s110 1754412625
+!i10b 1
+!s100 n5ObRBHafP7biMFdhM;Hk1
+IE^=HeLM:fMSJR[k;L[GE71
+Z3 dE:/digital_design_course/Project2/Eslam
+w1754409101
+8E:/digital_design_course/Project2/Eslam/RAM.V
+FE:/digital_design_course/Project2/Eslam/RAM.V
+!i122 12
+L0 1 45
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 OL;L;2021.1;73
+r1
+!s85 0
+31
+Z6 !s108 1754412625.000000
+!s107 E:/digital_design_course/Project2/Eslam/RAM.V|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/digital_design_course/Project2/Eslam/RAM.V|
+!i113 0
+Z7 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+n@r@a@m
+vSPI_Slave
+R2
+!i10b 1
+!s100 Z;<^80JZ=PKZ<ANdRWN[;3
+I5LYkUJ]TNCJi]GF@FN9jO2
+R3
+w1754409166
+8E:/digital_design_course/Project2/Eslam/SPI_Slave.V
+FE:/digital_design_course/Project2/Eslam/SPI_Slave.V
+!i122 13
+L0 5 154
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 E:/digital_design_course/Project2/Eslam/SPI_Slave.V|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/digital_design_course/Project2/Eslam/SPI_Slave.V|
+!i113 0
+R7
+R1
+n@s@p@i_@slave
+vSPI_Wrapper
+R2
+!i10b 1
+!s100 fWocOHYNiQWa0WmQJ2FPb1
+IO:^GZc970JM]TQ94@N<a71
+R3
+w1754409534
+8E:/digital_design_course/Project2/Eslam/SPI_Wrapper.V
+FE:/digital_design_course/Project2/Eslam/SPI_Wrapper.V
+!i122 14
+L0 1 35
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 E:/digital_design_course/Project2/Eslam/SPI_Wrapper.V|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/digital_design_course/Project2/Eslam/SPI_Wrapper.V|
+!i113 0
+R7
+R1
+n@s@p@i_@wrapper
+vWrapper_tb
+R2
+!i10b 1
+!s100 8SHZ975;e@Y]OnPNa@mOm1
+IhPgQN6Ff`Q1[d<:;eEEhB1
+R3
+w1754412609
+8E:/digital_design_course/Project2/Eslam/Wrapper_tb.V
+FE:/digital_design_course/Project2/Eslam/Wrapper_tb.V
+!i122 15
+L0 1 106
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 E:/digital_design_course/Project2/Eslam/Wrapper_tb.V|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/digital_design_course/Project2/Eslam/Wrapper_tb.V|
+!i113 0
+R7
+R1
+n@wrapper_tb

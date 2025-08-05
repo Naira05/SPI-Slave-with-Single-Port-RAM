@@ -1,0 +1,29 @@
+E:/digital_design_course/Project2/Eslam/RAM.V {1 {vlog -work work -vopt -stats=none E:/digital_design_course/Project2/Eslam/RAM.V
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module RAM
+
+Top level modules:
+	RAM
+
+} {} {}} E:/digital_design_course/Project2/Eslam/SPI_Wrapper.V {1 {vlog -work work -vopt -stats=none E:/digital_design_course/Project2/Eslam/SPI_Wrapper.V
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module SPI_Wrapper
+
+Top level modules:
+	SPI_Wrapper
+
+} {} {}} E:/digital_design_course/Project2/Eslam/Wrapper_tb.V {1 {vlog -work work -vopt -stats=none E:/digital_design_course/Project2/Eslam/Wrapper_tb.V
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module Wrapper_tb
+
+Top level modules:
+	Wrapper_tb
+
+} {} {}} E:/digital_design_course/Project2/Eslam/SPI_Slave.V {1 {vlog -work work -vopt -stats=none E:/digital_design_course/Project2/Eslam/SPI_Slave.V
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module SPI_Slave
+
+Top level modules:
+	SPI_Slave
+
+} {} {}}
